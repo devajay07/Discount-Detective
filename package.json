@@ -1,0 +1,19 @@
+{
+  "name": "discount-detective",
+  "version": "1.0.0",
+  "description": "Never overpay for an Amazon product again with Discount Detective! This handy extension tracks the prices of your favorite products and alerts you when they go on sale. Simply add a product to your tracker and set your target price, and Discount Detective will notify you as soon as the price drops below your threshold. Happy shopping!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devajay07/Discount-Detective.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devajay07/Discount-Detective/issues"
+  },
+  "homepage": "https://github.com/devajay07/Discount-Detective#readme"
+}

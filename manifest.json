@@ -5,7 +5,8 @@
   "description": "Track the prices of your favorite products on Amazon and get notified when they go on sale.",
   "permissions": [
     "activeTab",
-    "https://www.amazon.com/*"
+    "https://www.amazon.com/*",
+    "unlimitedStorage"
   ],
   "background": {
     "scripts": ["index.js"]
