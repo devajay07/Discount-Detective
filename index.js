@@ -1,4 +1,4 @@
-const nightmare = require('nightmare')
+import Puppeteer from 'puppeteer' ;
 const trackedProductsJson = localStorage.getItem('trackedProducts');
 
 // Parse the JSON string to retrieve the trackedProducts array
@@ -52,13 +52,13 @@ if (form) {
 async function logProductNames() {
     if(trackedProducts.length!=0) {
   for (const product of trackedProducts) {
-   const productName = await nightmare.goto(product.url)
-                                        .wait("#")
-                                        .evaluate(()=>
-                                        document.getElementById(
-                                            ""
-                                        ).innerText)
-                                        .end()
+   const browser = await Puppeteer.launch();
+   const page = await browser.newPage();
+   await page.goto(product.url)
+   const productName = await page.evaluate(()=>{
+    document.querySelector(".a-span12 span").textContent;
+   })
+
     // Log the product name to the console
     console.log(productName);
   }
